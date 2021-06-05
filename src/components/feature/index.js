@@ -1,0 +1,22 @@
+import React from 'react'
+import {Container,Title,SubTitle} from "./stlyes/feature"
+
+export default function Feature({children,...resrProps}) {
+	return (
+		<Container {...resrProps}>
+			{children}
+		</Container>
+	)
+
+}
+
+
+Feature.Title=function FeatureTitle({children,...restProps}){
+	return <Title {...restProps}>{children}</Title>
+
+}
+
+
+Feature.SubTitle=function FeatureSubTitle({children,...restProps}){
+	return <SubTitle {...restProps}>{children}</SubTitle>
+}
